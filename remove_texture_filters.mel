@@ -1,0 +1,12 @@
+/*	written by Emily Pollacchi
+  	file name remove_texture_filters
+  	Copyright (C) 2016 by Emily Pollacchi
+  	epollacchi@gmail.com
+*/
+
+
+string $fileses[] = `ls -type "file"`;
+for ($n=0 ; $n<size($fileses) ; $n++)
+{
+setAttr ($fileses[$n] + ".filterType") 0;
+}
